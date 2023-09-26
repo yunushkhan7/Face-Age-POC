@@ -1,0 +1,55 @@
+<div class="popup_container" *ngIf="data.status == 'Ok' && type == 'Eligible'">
+  <div class="icon_design">
+    <mat-icon class="success">done</mat-icon>
+  </div>
+  <div class="main_content">
+    <h4>{{data.age}} Years</h4>
+    <p>Your age has been Verified</p>
+    <a class="cmn-btn" mat-dialog-close (click)="close()">End</a>
+  </div>
+</div>
+
+<div class="popup_container" *ngIf="data.status == 'Error'">
+  <div class="icon_design" style="margin-bottom: 30px;">
+    <mat-icon class="warning">warning</mat-icon>
+  </div>
+  <div class="main_content">
+    <p>{{data.message}}</p>
+    <a class="cmn-btn" mat-dialog-close (click)="close()">End</a>
+  </div>
+</div>
+
+<div class="popup_container" *ngIf="data.status == 'Ok' && type == 'Further-Verifcation-Required'">
+  <div class="icon_design">
+    <mat-icon class="warning">warning</mat-icon>
+  </div>
+  <div class="main_content">
+    <h4>{{data.age}} Years</h4>
+    <p>Your age has been verified, however, we will need further checks</p>
+    <a class="cmn-btn" mat-dialog-close (click)="close()">End</a>
+  </div>
+</div>
+
+<div class="popup_container" *ngIf="data.status == 'Ok' && type == 'Not-Eligible'">
+  <div class="icon_design">
+    <mat-icon class="wrong">close</mat-icon>
+  </div>
+  <div class="main_content">
+    <h4>{{data.age}} Years</h4>
+    <p>We could not confirm you’re over the required</p>
+    <a class="cmn-btn" mat-dialog-close>End</a>
+  </div>
+</div>
+
+<div class="verify_popup" *ngIf="data.status == 'Ok' && type == 'Confidenty-NotVerified'">
+  <div class="icon_design">
+    <img src="../../../assets/images/age_21.png" />
+  </div>
+  <div class="main_content">
+    <p class="mt-4">You must be at least 21 years old to purchase this product</p>
+  </div>
+  <div class="btn_popup">
+    <a class="cmn-btn" mat-dialog-close>Verify Age</a>
+    <a class="cmn-btn alt" mat-dialog-close>Cancel</a>
+  </div>
+</div>

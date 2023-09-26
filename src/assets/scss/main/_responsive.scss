@@ -1,0 +1,454 @@
+// Responsive Area
+@media (max-width: 1599px) {
+	.ticket-checker .overlay {
+		background-position: left 40px bottom;
+		background-size: 45%;
+	}
+}
+
+@media (max-width: 1399px) {
+	.slick-arrow {
+		width: 30px;
+		height: 30px;
+	}
+	.slick-arrow::before {
+		width: 40px;
+		height: 40px;
+	}
+	.section-dots{
+		bottom: 53px;
+	}
+	.slick-arrow.arafat-next {
+		right: calc(50% - 95px);
+	}
+	.slick-arrow.arafat-prev {
+		left: calc(50% - 95px);
+	}
+	// .header-section .navbar .navbar-brand .logo{
+	// 	display: none;
+	// }
+	.lucky-number .tab-content li,
+	.lucky-number .tab-content li span {
+		width: 30px;
+		height: 30px;
+		min-width: 30px;
+	}
+	.lucky-number .tab-content .selected-number ul li{
+		width: initial;
+		height: initial;
+		min-width: initial;
+	}
+	.lucky-number .tab-content .top-area .cmn-btn {
+		padding: 10px 15px;
+	}
+	.about-us .overlay {
+		background-position: right 40px bottom;
+		background-size: 40%;
+	}
+	.about-us .container{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.banner-section.about .illus-area {
+		right: -10%;
+		img {
+			max-width: 80%;
+		}
+	}
+	.error-page img{
+		width: 100%;
+	}
+}
+
+@media (max-width: 1199px) {
+	h1, h1>a {
+		font-size: 57px;
+		line-height: 74.1px;
+		margin-top: -16px;
+	}
+	h2, h2>a {
+		font-size: 43px;
+		line-height: 55.9px;
+		margin-top: -10px;
+	}
+	.preloader {
+		background-size: 30%;
+	}
+	.header-section .navbar .navbar-brand {
+		margin-right: 30px;
+	}
+	.header-section .navbar .navbar-collapse .navbar-nav .nav-item .nav-link, 
+	.header-section .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-item {
+		font-size: 16px;
+	}
+	.header-section .navbar .navbar-collapse .right-area {
+		margin-left: 30px;
+	}
+	.lucky-number .tab-content{
+		margin-top: 30px;
+	}
+	.how-works .scroll-line::before {
+		display: none;
+	}
+	.banner-section.about .illus-area {
+		img{
+			width: 70%;
+		}
+	}
+	.latest-news .latest-news-carousel .slick-list,
+	.our-authority .slick-list {
+		padding-bottom: 30px !important;
+	}
+	.latest-news .latest-news-carousel .single-box {
+		margin: 15px 5px;
+	}
+}
+
+@media (max-width: 991px) {
+	// Normalize
+	h1, h1>a {
+		font-size: 57px;
+		line-height: 68.4px;
+		margin-top: -16px;
+	}
+	
+	h2, h2>a {
+		font-size: 43px;
+		line-height: 51.6px;
+		margin-top: -10px;
+	}
+	
+	h3, h3>a {
+		font-size: 32px;
+		line-height: 38.4px;
+		margin-top: -8px;
+	}
+	
+	h4, h4>a, .xxltxt {
+		font-size: 24px;
+		line-height: 28px;
+		margin-top: -6px;
+	}
+	
+	h5, h5>a, .xltxt {
+		font-size: 18px;
+		line-height: 22px;
+		margin-top: -4px;
+	}
+	
+	h6, h6>a, table thead tr th, button, a, p, span, li {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	
+	.section-header {
+		margin-bottom: 40px;
+	}
+	
+	.title {
+		margin-bottom: 20px;
+	}
+	
+	.lgtxt{
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.cmn-btn{
+		align-items: baseline;
+		padding: 10px 20px;
+		i{
+			font-size: 12px;
+		}
+		[class*='icon-']:before{
+			line-height: 1;
+		}
+	}
+
+	// Header Responsive
+	.header-section{
+		background-color: var(--section-1st-color);
+	}
+	.header-section .navbar-toggler {
+		display: inline-block;
+	}
+    .header-section .navbar .navbar-brand {
+		margin-top: -5px;
+		width: 35%;
+	}
+	.header-section .navbar .navbar-brand img {
+		max-width: initial;
+	}
+	.header-section .navbar .navbar-collapse .navbar-nav {
+		height: 200px;
+		margin: 20px 0;
+    	overflow-y: auto;
+		margin-bottom: 10px;
+	}
+	.header-section .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropend .dropdown-menu {
+		left: 60px;
+	}
+	.header-section .nav-item.main-navbar .main-menu .sub-navbar .sub-menu{
+		right: 0;
+	}
+	.header-section .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu.show {
+		display: inline-block;
+		margin-left: 130px;
+	}
+	.header-section .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
+		display: none;
+	}
+	.header-section .navbar .navbar-collapse .navbar-nav .nav-item{
+		padding: 8px 0;
+	}
+	.header-section .nav-item.dropdown .dropdown-menu {
+		position: initial;
+	}
+	.header-section .navbar .navbar-collapse .right-area .lang{
+		display: none !important;
+	}
+	.header-section .navbar .navbar-collapse .right-area{
+		margin-left: 0;
+	}
+	// End Header
+
+	.banner-section .overlay .sec-img{
+		display: none;
+	}
+	.banner-section .overlay .banner-content {
+		padding: 160px 0 110px;
+	}
+	.section-text {
+		margin-bottom: 20px;
+	}
+	.sec-img {
+		text-align: center;
+		margin-top: 30px;
+		max-width: 65%;
+		img{
+			max-width: 100% !important;
+		}
+	}
+	.about-us .overlay {
+		background-image: none;
+	}
+	.banner-section.about .illus-area {
+		img{
+			display: none;
+		}
+	}
+	.banner-section.inner-banner .banner-content {
+		padding: 210px 0 80px;
+	}
+	.banner-section.inner-banner .banner-content h2 {
+		margin-bottom: 7px;
+	}
+	.blog-single .main-content .text-content {
+		padding: 20px 10px;
+	}
+	.blog-single .main-content {
+		padding: 20px 10px;
+	}
+	.maps-area iframe {
+		height: 400px;
+	}
+	.questions-asked .nav,
+	.questions-asked .tab-content {
+		padding: 20px 10px;
+	}
+	.lucky-number .nav-link .icon-area img {
+		width: 80px;
+	}
+}
+
+@media (max-width: 767px) {
+	.latest-news .single-box {
+		display: grid;
+		padding: 30px;
+		.blog-img{
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.questions-asked .tab-content {
+		margin-top: 25px;
+	}
+	.questions-asked .tab-content .accordion-button {
+		padding-right: 20px;
+	}
+	.lottery-slider .single-slide .icon-area img {
+		width: 75px;
+	}
+}
+
+@media (max-width: 575px) {
+    h1, h1>a {
+        font-size: 40px;
+        line-height: 46px;
+		margin-top: -9px;
+    }
+    h2, h2>a {
+        font-size: 30px;
+        line-height: 36px;
+		margin-top: -7px;
+    }
+    h3, h3>a {
+        font-size: 24px;
+        line-height: 28px;
+		margin-top: -6px;
+    }
+    h4, h4>a {
+        font-size: 20px;
+        line-height: 24px;
+		margin-top: -4px;
+    }
+	a, p, span, li, .cmn-btn, thead tr th, tbody tr th, tbody tr td, input, label, textarea, h6, h6>a{
+		font-size: 16px;
+        line-height: 19px;
+    }
+	.section-header {
+		margin-bottom: 35px;
+	}
+	.title {
+		margin-bottom: 15px;
+	}
+	.sub-title {
+		margin-bottom: 14px;
+	}
+	.xxltxt {
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.xltxt {
+		font-size: 18px;
+		line-height: 25.5px;
+	}
+	.lgtxt {
+		font-size: 16px;
+		line-height: 22.4px;
+	}
+	.header-section .navbar {
+		padding: 20px 15px;
+	}
+	.lucky-number .nav-link {
+		padding: 15px 20px;
+	}
+	.ticket-checker .shape-area img{
+		display: none;
+	}
+	.testimonials {
+		.single-slide {
+			display: block;
+		}
+		.img-area {
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+		.single-content {
+			padding: 20px 10px;
+			margin: 15px 10px;
+		}
+		.slick-list {
+			padding-bottom: 40px !important;
+		}
+	}
+	.banner-section.inner-banner .banner-content {
+		padding: 170px 0 60px;
+	}
+	.our-goal ul li {
+		margin-top: 5px;
+	}
+	.blog-single .main-content .social a {
+		margin: 0;
+		margin-right: 15px;
+	}
+	.blog-single .comment-area {
+		padding: 30px 15px;
+	}
+	.maps-area iframe {
+		height: 300px;
+	}
+}
+
+@media (max-width: 480px) {
+	.lucky-number .tab-content .selected-number ul .head-area {
+		width: 40px;
+		height: 40px;
+	}
+	.recent-lottery-results .single-box {
+		display: grid;
+		padding: 20px;
+	}
+	.recent-lottery-results {
+		.single-box img {
+			width: 90px;
+		}
+
+	}
+	.ticket-checker {
+		.main-content {
+			padding: 30px 20px;
+		}
+		.lucky-number .tab-content ul{
+			padding-top: 0;
+		}
+	}
+	.counter-section .col-6{
+		width: 100% !important;
+	}
+	.how-works .single-box {
+		display: grid;
+		.icon-area img {
+			max-width: 70px;
+		}
+		.text-end {
+			text-align: start !important;
+			order: 1;
+		}
+	}
+	.blog-single .comment-area .comment-single {
+		display: grid !important;
+	}
+	.latest-news .single-box {
+		padding: 20px 10px;
+	}
+	.pagination-area .cmn-btn {
+		min-width: 30px;
+		min-height: 30px;
+	}
+	.pagination-area .prev-next {
+		margin: 0 5px;
+	}
+	.get-in-touch .single-box {
+		padding: 15px 10px;
+		gap: 10px;
+		flex-wrap: wrap;
+		img{
+			width: 80px;
+		}
+	}
+	.get-in-touch .form-area {
+		padding: 30px 20px;
+	}
+	.lottery-house.syndicate .single-slide {
+		padding: 20px 10px;
+	}
+	.signup-signin .form-area {
+		padding: 20px 10px;
+	}
+	.signup-signin .check-area{
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+	.signup-signin .checkbox-wrapper{
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 375px) {
+	.lottery-house .col-8,
+	.lucky-number .col-9{
+		width: 100% !important;
+	}
+}

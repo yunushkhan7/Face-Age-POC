@@ -1,0 +1,93 @@
+<header class="header-section">
+  <div class="overlay">
+    <div class="container">
+      <div class="row d-flex header-area">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a
+            routerLink="/"
+            class="navbar-brand d-flex align-items-center gap-2"
+          >
+            <!-- <img src="assets/images/fav.png" class="fav" alt="logo" /> -->
+            <img src="assets/images/logo.png" class="logo" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-content"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbar-content"
+          >
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" >Lotteries</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Results</a>
+              </li>
+              <li class="nav-item dropdown main-navbar">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside"
+                  >Pages</a
+                >
+                <ul class="dropdown-menu main-menu shadow show">
+                  <li><a class="nav-link" >Faq</a></li>
+                  <li class="dropend sub-navbar">
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      data-bs-auto-close="outside"
+                      >Blog</a
+                    >
+                    <ul class="dropdown-menu sub-menu shadow show">
+                      <li><a class="nav-link" >Blog</a></li>
+                      <li>
+                        <a class="nav-link"
+                          >Blog Single</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a class="nav-link">Sign Up</a></li>
+                  <li><a class="nav-link">Sign In</a></li>
+                  <li><a class="nav-link">Error</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <div class="right-area d-flex gap-3 gap-xl-5 align-items-center">
+              <div class="switch-wrapper d-flex gap-2 align-items-center">
+                <i class="icon-g-sun sun"></i>
+                <label class="switch">
+                  <input type="checkbox" id="checkbox" class="checkbox" />
+                  <span class="slider"></span>
+                </label>
+                <i class="icon-h-moon moon"></i>
+              </div>
+              <div class="btn-area">
+                <a routerLink="/play-lottery" class="cmn-btn">
+                  Play Lottery
+                  <i class="icon-a-arrow-double"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,25 @@
+<div class="web_cam">
+  <div *ngIf="!webcamImage" class="webcam">
+    <webcam
+      [width]="widthTemp"
+      [trigger]="triggerObservable"
+      (imageCapture)="handleImage($event)"
+      *ngIf="showWebcam"
+      [allowCameraSwitch]="allowCameraSwitch"
+      [switchCamera]="nextWebcamObservable"
+      [videoOptions]="videoOptions"
+      (cameraSwitched)="cameraWasSwitched($event)"
+      (initError)="handleInitError($event)"
+    >
+    </webcam>
+    <span class="brdr_1"></span>
+    <span class="brdr_2"></span>
+    <span class="brdr_3"></span>
+    <span class="brdr_4"></span>
+  </div>
+
+  <div *ngIf="webcamImage" class="webcam">
+    <img width="100%" class="img_preview" [src]="webcamImage.imageAsDataUrl" />
+  </div>
+  <button (click)="triggerSnapshot()" class="cmn-btn" *ngIf="!webcamImage"><a>Take Snap</a></button>
+</div>

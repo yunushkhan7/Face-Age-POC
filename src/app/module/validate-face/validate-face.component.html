@@ -1,0 +1,23 @@
+<div class="verify_popup" *ngIf="step == 1">
+  <div class="icon_design">
+    <img src="./assets/images/age_confirm.png" />
+  </div>
+  <div class="verify_age">
+    <p class="mt-4">
+      You must be at least 21 years old to purchase this product
+    </p>
+  </div>
+  <div class="btn_popup">
+    <a class="cmn-btn" (click)="verifyAge()">Verify Age</a>
+    <a class="cmn-btn alt" (click)="goToHome()">Cancel</a>
+  </div>
+</div>
+
+<!-- <div class="content2" *ngIf="step == 1">
+  You must be 21 years old to purchase this product.
+  <button (click)="verifyAge()"><a>Verify Age</a></button>
+  <button><a (click)="close()">Close</a></button>
+</div> -->
+<div class="content2" *ngIf="step == 2">
+  <app-camera (pictureTaken)="handleImage($event)"></app-camera>
+</div>
